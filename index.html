@@ -49,7 +49,12 @@
         tg.expand();
 
         push_button.addEventListener("click", () => {
-            tg.sendData(JSON.stringify(phone));
+
+            let data = {
+                phone: phone
+            };
+
+            tg.sendData(JSON.stringify(data));
         });
     </script>
 </body>
