@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:wght@500&family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+    <title>Bomb3r</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="contener">
+            <center>
+                <h1>Bomb3r by Egorka</h1>
+            </center>
+            <center>
+                <h2>Номер телефона</h2>
+            </center>
+            <center><input type="text" placeholder="Номер телефона" id="phone"></center>
+            <center>
+                <h2>Количество циклов</h2>
+            </center>
+            <center><input type="text" placeholder="Количество циклов" id="cikles"></center>
+            <center><button id="push_button">Начать</button></center>
+        </div>
+        <div class="socses">
+            <p>Instagram: <a href="https://instagram.com/foof.ik">https://instagram.com/foof.ik</a></p>
+            <p>Vkontakte: <a href="https://vk.com/prostoegorikkk">https://vk.com/prostoegorikkk</a></p>
+        </div>
+
+    </div>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script>
+        let tg = window.Telegram.WebApp;
+        let phone = document.getElementById("phone");
+        let cikles = document.getElementById("cikles");
+        let push_button = document.getElementById("push_button");
+        tg.expand();
+
+        push_button.addEventListener("click", () => {
+            tg.close()
+        });
+    </script>
+</body>
+
+</html>
