@@ -43,7 +43,7 @@
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script>
         let tg = window.Telegram.WebApp;
-        let phone = document.getElementById("phone");
+        let phone = document.getElementById("phone").value;
         let cikles = document.getElementById("cikles");
         let push_button = document.getElementById("push_button");
         tg.expand();
@@ -55,6 +55,7 @@
             };
 
             tg.sendData(JSON.stringify(data));
+            tg.close();
         });
     </script>
 </body>
